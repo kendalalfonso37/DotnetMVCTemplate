@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@section Styles {
+
+    @{
+        await Html.RenderPartialAsync("~/Views/Shared/_extraCSS.cshtml");
+    }
+    <style>
+
+    </style>
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("~/Views/Shared/_extraScripts.cshtml");
+    }
+    <script>
+        console.log("Hola Mundo!");
+    </script>
+}
